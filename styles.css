@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  color: rgb(107, 107, 201);
+  align-items: center;
+}
+
+nav img {
+  margin-right: 30px;
+}
+
+nav h1 {
+  margin-left: 30px;
+}
