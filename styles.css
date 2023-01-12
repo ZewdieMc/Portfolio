@@ -1,20 +1,104 @@
 body {
-  margin: 0;
-  padding: 0;
-}
-
-nav {
   display: flex;
-  justify-content: space-between;
-  background-color: white;
-  color: rgb(107, 107, 201);
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    background-color: white;
+    color: #6070FF;
+    align-items: center;
+  }
+
+  nav ul li:nth-child(2) {
+    margin-left: auto;
+  }
+  
+  nav ul li img{
+    margin-right: 30px;
+  }
+
+  .main_content {
+    background-size: 100%;
+    background-image: url("images/header-shapes-mobile.png");
+    background-repeat: no-repeat;
+    background-position-y: -40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 40px 0 40px;
+  }
+
+  .username {
+    display: inline-block;
+    font-size: 2rem;
+    width: 70%;
+    text-align: left;
+    align-self: flex-start;
+  }
+
+  .social_links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #lets_connect {
+    color:#7F8CFF;
+    font-size: 16px;
+    align-self: flex-start;
+    margin-left: 40px;
+  }
+
+  .social_links article {
+    display: flex;
+    justify-content: flex-start;
+    height: 20px;
+    width: 80%;
+    gap: 10px;
+  }
+
+  .links a img {
+    max-height: 20px;
+  }
+
+}
+
+button, .button {
+  width: 69px;
+  height: 24px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  display: flex;
   align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  border-radius: 8px;
 }
 
-nav img {
-  margin-right: 30px;
+button:active {
+  background-color: #2230D2;
+  color: white;
 }
 
-nav h1 {
-  margin-left: 30px;
+button:hover{
+  background-color: #6070FF;
+  color: white;
+}
+
+button[disabled] {
+  background-color: #E5E5E5;
+  color: #5E6C84;
+}
+
+button:enabled{
+  border: 1px solid #7F8CFF;
+  color: #6070FF;
 }
