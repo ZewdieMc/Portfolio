@@ -2,44 +2,68 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-image: url("/images/header-shapes-mobile.png");
+  background-repeat: no-repeat;
+  background-position-y: 92px;
+  background-size: 100%;
 }
 
 @media screen and (max-width: 768px) {
-  nav ul{
+  nav ul {
     list-style: none;
     display: flex;
     justify-content: flex-end;
     background-color: white;
-    color: #6070FF;
+    color: #6070ff;
     align-items: center;
   }
 
   nav ul li:nth-child(2) {
     margin-left: auto;
   }
-  
-  nav ul li img{
+
+  nav ul li img {
     margin-right: 30px;
   }
 
   .main_content {
-    background-size: 100%;
-    background-image: url("images/header-shapes-mobile.png");
-    background-repeat: no-repeat;
     background-position-y: -40px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: 0 40px 0 40px;
+    column-gap: 50px;
   }
 
   .username {
-    display: inline-block;
-    font-size: 2rem;
-    width: 70%;
+    display: inline-flex;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 52px;
+    width: 80%;
+    align-items: center;
     text-align: left;
     align-self: flex-start;
+    margin-top: 50px;
+    margin-bottom: auto;
+    color: #172b4d;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    font-family: 'Poppins', monospace;
+  }
+
+  .introduction {
+    /* background-color: #172b4d; */
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    color: #344563;
   }
 
   .social_links {
@@ -49,7 +73,7 @@ body {
   }
 
   #lets_connect {
-    color:#7F8CFF;
+    color: #7f8cff;
     font-size: 16px;
     align-self: flex-start;
     margin-left: 40px;
@@ -60,45 +84,10 @@ body {
     justify-content: flex-start;
     height: 20px;
     width: 80%;
-    gap: 10px;
+    gap: 20px;
   }
 
   .links a img {
     max-height: 20px;
   }
-
-}
-
-button, .button {
-  width: 69px;
-  height: 24px;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 24px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.03em;
-  border-radius: 8px;
-}
-
-button:active {
-  background-color: #2230D2;
-  color: white;
-}
-
-button:hover{
-  background-color: #6070FF;
-  color: white;
-}
-
-button[disabled] {
-  background-color: #E5E5E5;
-  color: #5E6C84;
-}
-
-button:enabled{
-  border: 1px solid #7F8CFF;
-  color: #6070FF;
 }
