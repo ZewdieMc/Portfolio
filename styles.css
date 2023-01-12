@@ -5,21 +5,17 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  nav {
+  header {
     display: flex;
     justify-content: flex-end;
-    background-color: white;
-    color: #6070ff;
-    align-items: center;
-    font-family: 'Poppins', monospace;
     padding: 30px;
   }
 
-  nav span:nth-child(2) {
-    margin-left: auto;
+  header span {
+    margin-right: auto;
   }
 
-  nav span a {
+  header span a {
     font-weight: 700;
     font-size: 18px;
     text-align: center;
