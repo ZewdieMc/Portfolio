@@ -2,29 +2,31 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-image: url("/images/header-shapes-mobile.png");
-  background-repeat: no-repeat;
-  background-position-y: 92px;
-  background-size: 100%;
 }
 
 @media screen and (max-width: 768px) {
-  nav ul {
-    list-style: none;
+  nav {
     display: flex;
     justify-content: flex-end;
     background-color: white;
     color: #6070ff;
     align-items: center;
     font-family: 'Poppins', monospace;
+    padding: 30px;
   }
 
-  nav ul li:nth-child(2) {
+  nav span:nth-child(2) {
     margin-left: auto;
   }
 
-  nav ul li img {
-    margin-right: 30px;
+  nav span a {
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    line-height: 20px;
+    text-decoration: none;
+    color: #6070ff;
+    font-family: 'Poppins', monospace;
   }
 
   .main_content {
@@ -35,6 +37,7 @@ body {
     justify-content: center;
     margin: 0 40px 0 40px;
     column-gap: 50px;
+    margin-top: 80px;
   }
 
   .username {
@@ -46,7 +49,6 @@ body {
     align-items: center;
     text-align: left;
     align-self: flex-start;
-    margin-top: 50px;
     margin-bottom: auto;
     color: #172b4d;
     flex: none;
@@ -56,7 +58,6 @@ body {
   }
 
   .introduction {
-    /* background-color: #172b4d; */
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -65,6 +66,7 @@ body {
     order: 1;
     flex-grow: 0;
     color: #344563;
+    font-family: 'Poppins', monospace;
   }
 
   .social_links {
@@ -78,17 +80,27 @@ body {
     font-size: 16px;
     align-self: flex-start;
     margin-left: 40px;
+    font-family: 'Poppins', monospace;
   }
 
-  .social_links article {
+  .social_links ul {
+    padding: 0;
     display: flex;
+    list-style: none;
     justify-content: flex-start;
     height: 20px;
     width: 80%;
     gap: 20px;
   }
 
-  .links a img {
+  .links li a img {
     max-height: 20px;
+  }
+
+  .headline {
+    background-image: url("/images/header-shapes-mobile.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 100vh;
   }
 }
