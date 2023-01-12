@@ -16,6 +16,7 @@ body {
     background-color: white;
     color: #6070ff;
     align-items: center;
+    font-family: 'Poppins', monospace;
   }
 
   nav ul li:nth-child(2) {
