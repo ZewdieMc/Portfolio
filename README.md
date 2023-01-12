@@ -59,7 +59,7 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Hello Microverse <a name="about-project"></a>
+# 📖 Portfolio <a name="about-project"></a>
 
 
 **[Portfolio]** is a project created to set up and and design the portfolio website in mobile first approach .
@@ -108,7 +108,7 @@ After you're finished please remove all the comments and instructions!
 
 > Click the live demo to access the application.
 
-- [Live Demo Link](https://zewdiemc.github.io/Portfolio/)
+- [Live Demo Link](https://zedhab-portfolio.netlify.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -139,7 +139,7 @@ Clone this repository to your desired folder:
 
 
 ```
-  git clone git@github.com:ZewdieMc/Hello-Microverse.git
+  git clone git@github.com:ZewdieMc/Portfolio.git
 ```
 
 ### Install
@@ -252,9 +252,8 @@ I would like to thank Microverse!
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./MIT.md) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
+This project is [MIT](./LICENSE) licensed.
+  _NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
