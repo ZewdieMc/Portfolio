@@ -35,7 +35,7 @@ body {
   }
 
   .headline {
-    background-image: url("/images/header-shapes-mobile.png");
+    background-image: url("./images/header-shapes-mobile.png");
     background-repeat: no-repeat;
     background-size: 100%;
     padding-bottom: 100px;
