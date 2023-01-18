@@ -17,6 +17,7 @@
             <span><a href="#"><img src="images/Union.png" alt="mobile navigation"></a></span>
         </nav>
     </header>
+    <!-- headeline -->
     <section class="headline">
         <div class="main_content">
             <h1 class="username">I’m Zewdie <br>Glad to see you!</h1>
@@ -60,6 +61,8 @@
         </div>
     </section>
     <!-- end of headline -->
+
+    <!-- works -->
     <section class="works">
         <div class="card">
             <div class="snapshoot_wapper">
@@ -80,7 +83,7 @@
                     <li>css</li>
                     <li>javaScript</li>
                 </ul>
-                <button class="action">See Project</button>
+                <button type="button" class="action">See Project</button>
             </div>
         </div>
         <div class="card">
@@ -102,7 +105,7 @@
                     <li>css</li>
                     <li>javaScript</li>
                 </ul>
-                <button class="action">See Project</button>
+                <button type="button" class="action">See Project</button>
             </div>
         </div>
         <div class="card">
@@ -124,7 +127,7 @@
                     <li>css</li>
                     <li>javaScript</li>
                 </ul>
-                <button class="action">See Project</button>
+                <button type="button"class="action">See Project</button>
             </div>
         </div>
         <div class="card">
@@ -146,11 +149,13 @@
                     <li>css</li>
                     <li>javaScript</li>
                 </ul>
-                <button class="action">See Project</button>
+                <button type="button" class="action">See Project</button>
             </div>
         </div>
     </section>
     <!-- end of works section -->
+
+    <!-- about myself -->
     <section class="about_myself">
         <div class="top">
             <h1>About<br> Myself</h1>
@@ -190,7 +195,7 @@
                     </li>
                 </ul>
             </div>
-            <button class="action">Get my resume</button>
+            <button type="button"class="action">Get my resume</button>
         </div>
         <div class="skill_list">
             <ul>
@@ -204,19 +209,48 @@
                         <li class="language"><img src="images/Ellipse_css.png" alt="">CSS</li>
                     </ul>
                 </li>
-                <li><img class="separator"img src="images/Separator Bottom.png" alt=""></li>
+                <li><img class="separator" img src="images/Separator Bottom.png" alt=""></li>
                 <li>
-                    <div class="frame"><h4>Frameworks</h4> <img class="arrow" src="images/right.png" alt="">
+                    <div class="frame">
+                        <h4>Frameworks</h4> <img class="arrow" src="images/right.png" alt="">
                     </div>
                 </li>
-                <li><img class="separator"img src="images/Separator Bottom.png" alt=""></li>
+                <li><img class="separator" img src="images/Separator Bottom.png" alt=""></li>
                 <li>
-                    <div class="frame"><h4>Skills</h4><img class="arrow" src="images/right.png" alt=""></div>
+                    <div class="frame">
+                        <h4>Skills</h4><img class="arrow" src="images/right.png" alt="">
+                    </div>
                 </li>
             </ul>
         </div>
     </section>
     <!-- end of about section -->
-</body>
 
+    <!-- contact form -->
+    <section class="contact_form">
+        <div class="contact_wrapper">
+            <h1>Contact me</h1>
+            <p>
+                If you have an application you are interested in developing,
+                a feature that you need built or a project that needs coding.
+                I’d love to help with it
+            </p>
+            <form action="https://formspree.io/f/xbjeloeq" method="post">
+                <ul>
+                    <li>
+                      <input name="username" type="text" placeholder="Your name" maxlength="30"required>
+                    </li>
+                    <li>
+                      <input name="email" type="email" placeholder="youremail@example.com" required>
+                    </li>
+                    <li>
+                      <textarea name="message" id="message" placeholder="Write your message here" maxlength="500" required></textarea>
+                    </li>
+                </ul>
+                <input type="submit" value="Get It Touch">
+            </form>
+        </div>
+    </section>
+    <!-- end of contact form -->
+</body>
 </html>
