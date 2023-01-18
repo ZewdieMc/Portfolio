@@ -413,6 +413,7 @@ button {
   text-align: center;
   border-radius: 8px;
 }
+
 button:hover {
   background-color: #6070ff;
   color: #fff;
@@ -424,10 +425,12 @@ button:active {
   border: 1px solid #7f8cff;
   color: #6070ff;
 }
+
 button:disabled {
   color: #5e6c84;
   border: 1px solid #c1c7d0;
 }
+
 button:focus {
   background: #2230d2;
   color: #fff;
