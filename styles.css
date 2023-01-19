@@ -42,9 +42,9 @@ header span a {
 .headline {
   background-image: url("./images/header-shapes-mobile.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position-x: 100%;
-  padding-bottom: 100px;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -447,10 +447,7 @@ button:focus {
     flex-direction: row-reverse;
   }
 
-  .snapshoot_wapper {
-    width: 50%;
-  }
-
+  .snapshoot_wapper,
   .left_block {
     width: 50%;
   }
@@ -480,8 +477,6 @@ button:focus {
 
   .headline {
     background-image: url("./images/headerbg.png");
-    background-repeat: no-repeat;
-    background-size: cover;
   }
 
   .headline .introduction {
