@@ -11,12 +11,18 @@ body {
   justify-content: center;
   font-family: "Poppins", monospace;
   color: #344563;
+  background-color: #e5e5e5;
 }
 
 header {
   display: flex;
   justify-content: flex-end;
   padding: 30px;
+  background: #fff;
+}
+
+header nav ul {
+  display: none;
 }
 
 header span {
@@ -36,19 +42,22 @@ header span a {
 .headline {
   background-image: url("./images/header-shapes-mobile.png");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
+  background-position-x: 100%;
   padding-bottom: 100px;
   display: flex;
   flex-direction: column;
   gap: 10px;
-  border-bottom-left-radius: 20px;
+  align-items: center;
+  background-color: #fff;
+  border-bottom-left-radius: 100px;
 }
 
 .main_content {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: flex-start;
   margin: 80px 40px 0 40px;
   row-gap: 10px;
 }
@@ -76,8 +85,6 @@ header span a {
   font-size: 16px;
   line-height: 24px;
   flex: none;
-  order: 1;
-  flex-grow: 0;
   color: #344563;
   font-family: "Poppins", monospace;
 }
@@ -87,24 +94,23 @@ header span a {
   flex-direction: column;
   align-items: flex-start;
   row-gap: 10px;
+  width: 100%;
 }
 
 #lets_connect {
   color: #7f8cff;
   font-size: 16px;
   align-self: flex-start;
-  margin-left: 40px;
   font-family: "Poppins", monospace;
 }
 
-.social_links ul {
+.links {
   display: flex;
   list-style: none;
   justify-content: flex-start;
   height: 20px;
   width: 80%;
-  gap: 20px;
-  margin-left: 40px;
+  column-gap: 20px;
 }
 
 .links li a img {
@@ -127,7 +133,7 @@ header span a {
   background: #ffff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
-  padding: 16px;
+  padding: 32px;
   gap: 12px;
   display: flex;
   flex-direction: column;
@@ -146,6 +152,7 @@ header span a {
 
 /* left_block */
 .left_block {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -229,7 +236,8 @@ button.action {
   align-items: flex-start;
   padding: 114px 24px;
   gap: 24px;
-  border-top-right-radius: 20px;
+  border-top-right-radius: 100px;
+  background: #fff;
 }
 
 .top {
@@ -249,10 +257,6 @@ button.action {
   color: #172b4f;
 }
 
-.top .social_links {
-  margin-left: -40px;
-}
-
 .top button.action {
   margin-top: 10px;
   width: 162px;
@@ -268,17 +272,8 @@ button.action {
   width: 100%;
 }
 
-.contact_wrapper form ul {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  row-gap: 10px;
-}
-
 .about_myself .skill_list ul {
   list-style: none;
-  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -309,15 +304,27 @@ button.action {
 }
 
 .contact_form {
-  background-image: url("images/contact-form.svg");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-color: #6070ff;
-  padding: 114px 24px;
-  border-top-left-radius: 100px;
+  background-color: #fff;
 }
 
-.contact_form .contact_wrapper > h1 {
+.contact_form .contact_wrapper {
+  background-image: url("images/contact-form.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #6070ff;
+  background-position-x: 100%;
+  border-top-left-radius: 100px;
+  padding: 114px 24px;
+}
+
+.contact_wrapper .form_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.contact_form .contact_wrapper .form_wrapper > h1 {
   color: #fff;
   font-weight: 700;
   font-family: "Poppins", monospace;
@@ -328,7 +335,7 @@ button.action {
   text-align: center;
 }
 
-.contact_form .contact_wrapper > p {
+.contact_form .contact_wrapper .form_wrapper > p {
   font-family: "Poppins", monospace;
   font-style: normal;
   font-weight: 400;
@@ -338,24 +345,12 @@ button.action {
   color: #ebebff;
 }
 
-.contact_form .contact_wrapper {
-  margin: 80px 0 0 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-}
-
 .contact_wrapper form {
   width: auto;
   display: inline-flex;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 10px;
-}
-
-.contact_wrapper ul li {
-  width: 100%;
+  align-items: center;
+  gap: 20px;
 }
 
 .contact_wrapper input,
@@ -368,7 +363,7 @@ button.action {
   display: flex;
   align-items: center;
   color: #172b4d;
-  border-radius: 8px;
+  border-radius: 2px;
   border: 1px solid #cfd8dc;
   padding: 15px 38px 15px 16px;
   width: 100%;
@@ -435,16 +430,109 @@ button:focus {
   color: #fff;
 }
 
+/* For Desktop and Laptop */
 @media screen and (min-width: 768px) {
   .works .card {
     background: #fff;
     border: 2px solid #dfe1e6;
-    border-radius: 16px;
-    padding: 16px;
+    border-radius: 24px;
     gap: 12px;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     column-gap: 20px;
+  }
+
+  .works .card:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  .works .card:nth-child(odd) {
+    flex-direction: row;
+  }
+
+  .snapshoot_wapper {
+    width: 50%;
+  }
+
+  .left_block {
+    width: 50%;
+  }
+
+  header {
+    /* optional */
+
+    /* border-bottom: 1px solid darkgray; */
+  }
+
+  header nav span {
+    display: none;
+  }
+
+  header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+  }
+
+  header nav ul li a {
+    text-decoration: none;
+    font-family: 'Poppins', monospace;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #344563;
+  }
+
+  .headline {
+    background-image: url("./images/headerbg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .headline .introduction {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .headline .main_content {
+    padding: 100px 150px 0;
+  }
+
+  .about_myself {
+    padding: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .skill_list ul li .language_wrapper {
+    list-style: none;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .skill_list ul li .language_wrapper .language {
+    height: 120px;
+    width: 122px;
+    flex-direction: column;
+    padding: 10px 20px;
+  }
+
+  .contact_form .contact_wrapper {
+    background-image: url("./images/contact-formdp.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .contact_form .contact_wrapper > p {
+    font-size: 20px;
+    line-height: 18px;
+  }
+
+  .contact_form .contact_wrapper .form_wrapper {
+    margin: 0 25%;
   }
 }
