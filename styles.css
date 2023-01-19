@@ -440,14 +440,11 @@ button:focus {
     display: flex;
     justify-content: space-between;
     column-gap: 20px;
+    flex-direction: row;
   }
 
   .works .card:nth-child(even) {
     flex-direction: row-reverse;
-  }
-
-  .works .card:nth-child(odd) {
-    flex-direction: row;
   }
 
   .snapshoot_wapper {
@@ -456,12 +453,6 @@ button:focus {
 
   .left_block {
     width: 50%;
-  }
-
-  header {
-    /* optional */
-
-    /* border-bottom: 1px solid darkgray; */
   }
 
   header nav span {
