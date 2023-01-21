@@ -11,7 +11,7 @@ body {
   justify-content: center;
   font-family: "Poppins", monospace;
   color: #344563;
-  background-color: #e5e5e5;
+  background-color: #f4f5f7;
 }
 
 header {
@@ -44,7 +44,8 @@ header span a {
   background-repeat: no-repeat;
   background-size: contain;
   background-position-x: 100%;
-  height: 100vh;
+
+  /* height: 100vh; */
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -58,8 +59,8 @@ header span a {
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  margin: 80px 40px 0 40px;
-  row-gap: 10px;
+  padding: 114px 24px;
+  gap: 12px;
 }
 
 .username {
@@ -123,7 +124,7 @@ header span a {
   grid-template-columns: 1fr;
   justify-content: center;
   font-family: "Poppins", monospace;
-  background: #e5e5e5;
+  background: #f4f5f7;
   padding: 114px 24px;
   gap: 88px;
 }
@@ -133,7 +134,7 @@ header span a {
   background: #ffff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
-  padding: 32px;
+  padding: 16px;
   gap: 12px;
   display: flex;
   flex-direction: column;
@@ -148,6 +149,18 @@ header span a {
 .snapshoot_wapper .snapshoot {
   object-fit: contain;
   width: 100%;
+  height: 100%;
+}
+
+.snapshoot_wapper .desktop,
+.left_block .left_block_title .desktop,
+.left_block .tags .desktop {
+  display: none;
+}
+
+.snapshoot_wapper .mobile,
+.left_block .left_block_title .mobile {
+  display: initial;
 }
 
 /* left_block */
@@ -156,7 +169,7 @@ header span a {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  row-gap: 20px;
+  row-gap: 12px;
 }
 
 .left_block_title {
@@ -166,15 +179,13 @@ header span a {
 }
 
 .left_block_title .projec_title {
-  width: 295px;
   font-family: "Poppins", monospace;
   font-style: normal;
   font-weight: 700;
-  font-size: 32px;
+  font-size: 36px;
   line-height: 44px;
   color: #172b4d;
   display: flex;
-  flex-wrap: wrap;
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -190,10 +201,11 @@ header span a {
   align-items: center;
 }
 
-.left_block ul {
+.left_block .tags {
   list-style: none;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
   margin: 0;
 }
@@ -257,6 +269,13 @@ button.action {
   color: #172b4f;
 }
 
+.about_myself .top p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+}
+
 .top button.action {
   margin-top: 10px;
   width: 162px;
@@ -290,6 +309,34 @@ button.action {
 .skill_list ul li .frame {
   display: flex;
   justify-content: space-between;
+}
+
+.left_block .left_block_title .frame {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.left_block .left_block_title .frame .client {
+  font-family: "Poppins", monospace;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #344563;
+}
+
+.left_block .left_block_title .frame .role,
+.left_block .left_block_title .frame .year {
+  font-family: "Poppins", monospace;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #7a869a;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 
 .skill_list ul li .language_wrapper .language {
@@ -349,7 +396,7 @@ button.action {
   width: auto;
   display: inline-flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   gap: 20px;
 }
 
@@ -363,7 +410,7 @@ button.action {
   display: flex;
   align-items: center;
   color: #172b4d;
-  border-radius: 2px;
+  border-radius: 8px;
   border: 1px solid #cfd8dc;
   padding: 15px 38px 15px 16px;
   width: 100%;
@@ -432,15 +479,17 @@ button:focus {
 
 /* For Desktop and Laptop */
 @media screen and (min-width: 768px) {
+  .works {
+    padding: 142px;
+    gap: 142px;
+  }
+
   .works .card {
-    background: #fff;
+    padding: 24;
     border: 2px solid #dfe1e6;
     border-radius: 24px;
-    gap: 12px;
-    display: flex;
-    justify-content: space-between;
-    column-gap: 20px;
     flex-direction: row;
+    gap: 22px;
   }
 
   .works .card:nth-child(even) {
@@ -450,6 +499,44 @@ button:focus {
   .snapshoot_wapper,
   .left_block {
     width: 50%;
+  }
+
+  .snapshoot_wapper .mobile,
+  .left_block .left_block_title .mobile {
+    display: none;
+  }
+
+  .snapshoot_wapper .desktop,
+  .left_block .left_block_title .desktop,
+  .left_block .tags .desktop {
+    display: initial;
+  }
+
+  .left_block {
+    padding: 24px;
+    row-gap: 24px;
+  }
+
+  .left_block_title .projec_title {
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  .left_block_title .frame .counter {
+    height: 8px;
+    width: 8px;
+  }
+
+  .left_block > p {
+    font-style: 16px;
+  }
+
+  header {
+    padding: 26px 155px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
   }
 
   header nav span {
@@ -465,7 +552,7 @@ button:focus {
 
   header nav ul li a {
     text-decoration: none;
-    font-family: 'Poppins', monospace;
+    font-family: "Poppins", monospace;
     font-weight: 500;
     font-style: normal;
     line-height: 15px;
@@ -479,19 +566,25 @@ button:focus {
     background-image: url("./images/headerbg.png");
   }
 
+  .username {
+    font-size: 48px;
+    line-height: 60px;
+    color: #091e42;
+  }
+
   .headline .introduction {
     font-size: 20px;
     line-height: 28px;
   }
 
   .headline .main_content {
-    padding: 100px 150px 0;
+    padding: 248px 221px 281px;
   }
 
   .about_myself {
-    padding: 80px;
+    padding: 142px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 40% 60%;
   }
 
   .skill_list ul li .language_wrapper {
@@ -504,12 +597,12 @@ button:focus {
     height: 120px;
     width: 122px;
     flex-direction: column;
-    padding: 10px 20px;
+    padding: 10px 10px;
+    align-items: flex-start;
   }
 
   .contact_form .contact_wrapper {
     background-image: url("./images/contact-formdp.png");
-    background-repeat: no-repeat;
     background-size: contain;
   }
 
@@ -519,6 +612,16 @@ button:focus {
   }
 
   .contact_form .contact_wrapper .form_wrapper {
-    margin: 0 25%;
+    padding: 142px 320px 127px;
+  }
+
+  .form_wrapper form {
+    align-items: center;
+    width: 447px;
+  }
+
+  .contact_wrapper input,
+  .contact_wrapper textarea {
+    border-radius: 2px;
   }
 }
