@@ -16,9 +16,9 @@
         <nav>
             <span><a href="#"><img src="images/Union.png" alt="mobile navigation"></a></span>
             <ul>
-                <li><a href="./index.html">Portfolio</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#portfolio_section">Portfolio</a></li>
+                <li><a href="#about_section">About</a></li>
+                <li><a href="#contact_section">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -67,7 +67,7 @@
     <!-- end of headline -->
 
     <!-- works -->
-    <section class="works">
+    <section id="portfolio_section"class="works">
         <div class="card">
             <div class="snapshoot_wapper">
                 <img class="snapshoot mobile" src="./images/Snapshootmbl1.png" alt="">
@@ -77,7 +77,6 @@
                 <div class="left_block_title">
                     <div class="projec_title mobile">Tonic</div>
                     <div class="projec_title desktop">Tonic</div>
-                    <div class="frame">
                         <div class="frame">
                             <div class="client">CANOPY</div>
                             <img class="counter" src="./images/Counter.png" alt="">
@@ -85,7 +84,6 @@
                             <img class="counter" src="./images/Counter.png" alt="">
                             <div class="year">2015</div>
                         </div>
-                    </div>
                 </div>
                 <p>
                     A daily selection of privately personalized reads; no accounts or sign-ups required.
@@ -105,19 +103,24 @@
             </div>
             <div class="left_block">
                 <div class="left_block_title">
-                    <div class="projec_title mobile">Multi-Post Stories</div>
-                    <div class="projec_title desktop">Multi-Post Stories</div>
+                    <div class="projec_title ">Multi-Post Stories</div>
                         <div class="frame">
                             <div class="client mobile">CANOPY</div>
                             <div class="client desktop">FACEBOOK</div>
                             <img class="counter" src="./images/Counter.png" alt="">
-                            <div class="role">Back End Dev</div>
+                            <div class="role mobile">Back End Dev</div>
+                            <div class="role desktop">Full Stack Dev</div>
                             <img class="counter" src="./images/Counter.png" alt="">
                             <div class="year">2015</div>
                     </div>
                 </div>
-                <p>
+                <p class="mobile">
                     A daily selection of privately personalized reads; no accounts or sign-ups required.
+                </p>
+                <p class="desktop">
+                    Experimental content creation feature that allows users to 
+                    add to an existing story over the course of a day without
+                    spamming their friends.
                 </p>
                 <ul class="tags">
                     <li>html</li>
@@ -141,13 +144,18 @@
                         <div class="client mobile">CANOPY</div>
                         <div class="client desktop">FACEBOOK</div>
                         <img class="counter" src="./images/Counter.png" alt="">
-                        <div class="role">Back End Dev</div>
+                        <div class="role mobile">Back End Dev</div>
+                        <div class="role desktop">Full Stack Dev</div>
                         <img class="counter" src="./images/Counter.png" alt="">
                         <div class="year">2015</div>
                     </div>
                 </div>
-                <p>
+                <p class="mobile">
                     A daily selection of privately personalized reads; no accounts or sign-ups required.
+                </p>
+                <p class="desktop">
+                    Exploring the future of media in Facaebook's first Virtual Reality app; a place to 
+                    discover and enjoy 360 photos and videos on Gear VR.
                 </p>
                 <ul class="tags">
                     <li>html</li>
@@ -178,8 +186,12 @@
                         <div class="year desktop">2018</div>
                     </div>
                 </div>
-                <p>
+                <p class="mobile">
                     A daily selection of privately personalized reads; no accounts or sign-ups required.
+                </p>
+                <p class="desktop">
+                    A smart assistant to make driving more safe, efficient, and fun by unlocking your
+                    most expensive computer. your car.
                 </p>
                 <ul class="tags">
                     <li>html</li>
@@ -194,7 +206,7 @@
     <!-- end of works section -->
 
     <!-- about myself -->
-    <section class="about_myself">
+    <section id="about_section"class="about_myself">
         <div class="top">
             <h1>About<br> Myself</h1>
             <p>Hello I’m a software developer! I can help you build a product , feature or website Look through some of
@@ -263,14 +275,14 @@
     <!-- end of about section -->
 
     <!-- contact form -->
-    <section class="contact_form">
+    <section id="contact_section"class="contact_form">
         <div class="contact_wrapper">
             <div class="form_wrapper">
                 <h1>Contact me</h1>
                 <p>
                     If you have an application you are interested in developing,
                     a feature that you need built or a project that needs coding.
-                    I’d love to help with it
+                    I’d love to help with it.
                 </p>
                 <form action="https://formspree.io/f/xbjeloeq" method="post">
                     <input name="username" type="text" placeholder="Your name" maxlength="30" required>
