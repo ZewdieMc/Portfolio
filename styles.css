@@ -21,22 +21,30 @@ header {
   background: #fff;
 }
 
+header > a {
+  animation: rotate;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  margin-right: auto;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotateY(0deg);
+  }
+
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
 header nav ul {
   display: none;
 }
 
-header span {
-  margin-right: auto;
-}
-
-header span a {
-  font-weight: 700;
-  font-size: 18px;
-  text-align: center;
-  line-height: 20px;
-  text-decoration: none;
-  color: #6070ff;
-  font-family: "Poppins", monospace;
+header a img {
+  height: 2rem;
+  width: 2rem;
 }
 
 .headline {
@@ -139,25 +147,20 @@ header span a {
   align-items: center;
 }
 
-/* snapshoot */
-.snapshoot_wapper {
-  width: 100%;
-}
-
-.snapshoot_wapper .snapshoot {
+.card .snapshoot {
   object-fit: contain;
   width: 100%;
   height: auto;
 }
 
-.snapshoot_wapper .desktop,
+.card .desktop,
 .left_block .desktop,
 .left_block .left_block_title .desktop,
 .left_block .tags .desktop {
   display: none;
 }
 
-.snapshoot_wapper .mobile,
+.card .mobile,
 .left_block .mobile,
 .left_block .left_block_title .mobile {
   display: initial;
@@ -371,7 +374,7 @@ button.action {
   gap: 20px;
 }
 
-.contact_form .contact_wrapper .form_wrapper > h1 {
+.contact_form .contact_wrapper .form_wrapper > h2 {
   color: #fff;
   font-weight: 700;
   font-family: "Poppins", monospace;
@@ -497,29 +500,32 @@ button:focus {
     flex-direction: row-reverse;
   }
 
-  .snapshoot_wapper,
-  .left_block {
-    width: auto;
+  .card .snapshoot {
+    width: 48%;
     height: 100%;
-    flex: 1;
+    object-fit: cover;
+    object-position: center;
   }
 
-  .snapshoot_wapper .mobile,
+  .card .left_block {
+    width: auto;
+    height: 100%;
+    padding: 24px;
+    row-gap: 24px;
+    overflow-x: auto;
+  }
+
+  .card .mobile,
   .left_block .mobile,
   .left_block .left_block_title .mobile {
     display: none;
   }
 
-  .snapshoot_wapper .desktop,
+  .card .desktop,
   .left_block .desktop,
   .left_block .left_block_title .desktop,
   .left_block .tags .desktop {
     display: initial;
-  }
-
-  .left_block {
-    padding: 24px;
-    row-gap: 24px;
   }
 
   .left_block_title .projec_title {
@@ -537,7 +543,7 @@ button:focus {
   }
 
   header {
-    padding: 26px 155px;
+    padding: 11px 155px;
     position: fixed;
     top: 0;
     left: 0;
@@ -549,6 +555,7 @@ button:focus {
   }
 
   header nav ul {
+    padding-top: 0.75rem;
     list-style: none;
     display: flex;
     justify-content: flex-end;
@@ -576,8 +583,8 @@ button:focus {
 
   .headline {
     background-image: url("./images/headerbg.png");
-    background-size: 99%;
-    background-position: left 20px top 80px;
+    background-size: contain;
+    background-position: center;
   }
 
   .username {
