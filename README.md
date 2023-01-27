@@ -108,7 +108,7 @@ After you're finished please remove all the comments and instructions!
 
 > Click the live demo to access the application.
 
-- [Live Demo Link](https://zedhab-portfolio.netlify.app/)
+- [Live Demo Link](https://zewdiemc.github.io/Portfolio/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
