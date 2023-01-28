@@ -582,7 +582,7 @@ button:focus {
   }
 
   .headline {
-    background-image: url("./images/headerbg.png");
+    background-image: url("../images/headerbg.png");
     background-size: contain;
     background-position: center;
   }
@@ -636,7 +636,7 @@ button:focus {
   }
 
   .contact_form .contact_wrapper {
-    background-image: url("./images/contact-formdp.png");
+    background-image: url("../images/contact-formdp.png");
     background-size: contain;
     background-size: 90%;
     background-position: top 75px right 74px;
