@@ -48,7 +48,7 @@ header a img {
 }
 
 .headline {
-  background-image: url("./images/header-shapes-mobile.png");
+  background-image: url("../images/header-shapes-mobile.png");
   background-repeat: no-repeat;
   background-size: 100%;
   background-size: cover;
@@ -358,7 +358,7 @@ button.action {
 }
 
 .contact_form .contact_wrapper {
-  background-image: url("images/contact-form.svg");
+  background-image: url("../images/contact-form.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-color: #6070ff;
