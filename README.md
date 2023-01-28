@@ -62,7 +62,8 @@ After you're finished please remove all the comments and instructions!
 # 📖 Portfolio <a name="about-project"></a>
 
 
-**[Portfolio]** is a project created to set up and and design the portfolio website in mobile first approach .
+**Portfolio** is a project created to set up and and design the portfolio website in mobile first approach .
+Have a look at [this presentation](https://www.loom.com/share/cb3e7a960be04030a818d5faea4feafc) for more detail.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -98,7 +99,7 @@ After you're finished please remove all the comments and instructions!
 
 > The following are the key features of the application.
 
-- **Displays only <em>Header and the headline sections </em> in mobile first design approach.**
+- **Displays <em> headline section, works, about, and contact sections </em> in mobile first design approach.**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
