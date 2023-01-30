@@ -40,7 +40,7 @@ header > a {
   flex-direction: column;
   backdrop-filter: blur(8px);
   mix-blend-mode: multiply;
-  animation: slideleft 0.5s 1 ease-out;
+  animation: slideleft 0.5s 1 ease-in-out;
 }
 
 @keyframes slideleft {
