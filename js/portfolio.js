@@ -16,21 +16,12 @@ document.addEventListener('DOMContentLoaded', () => {
   const sections = document.querySelectorAll('section');
   const navLi = document.querySelectorAll('nav ul li a');
 
-  window.addEventListener('scroll', () => {
-    let current = '';
-
-    sections.forEach((section) => {
-      const sectionTop = section.offsetTop;
-      const sectionHeight = section.clientHeight;
-      if (window.scrollY >= sectionTop - sectionHeight / 3) {
-        current = section.getAttribute('id');
-      }
-    });
-
-    navLi.forEach((li) => {
-      li.classList.remove('active');
-      if (li.classList.contains(current)) {
-        li.classList.add('active');
+  window.onscroll = (() => {
+    sections.forEach((section, i) => {
+      const rect = section.getBoundingClientRect().y;
+      if (rect < window.innerHeight - 200) {
+        navLi.forEach((section) => section.classList.remove('active'));
+        navLi[i].classList.add('active');
       }
     });
   });

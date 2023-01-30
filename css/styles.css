@@ -626,18 +626,20 @@ button:focus {
     align-items: center;
     text-align: center;
     color: #344563;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
     transition: all 0.1s ease-in 0.1s;
   }
 
   header nav ul li a.active {
-    color: #6070ff;
+    color: #fff;
+    background-color: #6070ff;
     font-weight: bolder;
   }
 
   header nav ul li a:hover {
     font-weight: 700;
     font-size: 1rem;
-    color: blueviolet;
   }
 
   .headline {
