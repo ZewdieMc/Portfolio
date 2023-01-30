@@ -13,11 +13,22 @@
 </head>
 
 <body>
+    <div class="menu hidden">
+        <a id='close-menu'href="javascript:void(0)">
+            &times;
+        </a>
+        <div class="menu-content">
+            <a href="#portfolio_section">Portfolio</a>
+            <a href="#about_section">About</a>
+            <a href="#contact_section">Contact</a>
+        </div>
+    </div>
     <header>
         <a href="./"><img src="./images/cropped-ZD-icon.png" alt="Logo"></a>
         <nav>
-            <span><a href="#"><img src="images/Union.png" alt="mobile navigation"></a></span>
+            <img id="mobile-menu" src="images/Union.png" alt="mobile navigation">
             <ul>
+                <li><a class = "active" href="#headline">Welcome</a></li>
                 <li><a href="#portfolio_section">Portfolio</a></li>
                 <li><a href="#about_section">About</a></li>
                 <li><a href="#contact_section">Contact</a></li>
@@ -25,7 +36,7 @@
         </nav>
     </header>
     <!-- headeline -->
-    <section class="headline">
+    <section id="headline"class="headline">
         <div class="main_content">
             <h1 class="username">I’m Zewdie <br>Glad to see you!</h1>
             <p class="introduction">I’m a software developer! I can help you build a product ,
@@ -292,6 +303,7 @@
         </div>
     </section>
     <!-- end of contact form -->
+    <script src="./js/portfolio.js"></script>
 </body>
 
 </html>

@@ -22,20 +22,73 @@ header {
 }
 
 header > a {
-  animation: rotate;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
   margin-right: auto;
 }
 
-@keyframes rotate {
+.menu {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #6070ff;
+  overflow-x: hidden;
+  padding: 10px 30px 0 0;
+  transition: 0.5s;
+  display: flex;
+  flex-direction: column;
+  backdrop-filter: blur(8px);
+  mix-blend-mode: multiply;
+  animation: slideleft 0.5s 1 ease-in-out;
+}
+
+@keyframes slideleft {
   from {
-    transform: rotateY(0deg);
+    margin-left: 100%;
   }
 
   to {
-    transform: rotateY(360deg);
+    margin-left: 0;
   }
+}
+
+.hidden {
+  display: none;
+}
+
+.menu #close-menu {
+  align-self: flex-end;
+  font-size: 50px;
+  margin-left: 50px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu #close-menu:hover {
+  color: #a3cc0e;
+}
+
+.menu .menu-content {
+  padding-left: 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.menu .menu-content a {
+  font-size: 32px;
+  line-height: 44px;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu .menu-content a:hover {
+  color: #a3cc0e;
 }
 
 header nav ul {
@@ -515,6 +568,7 @@ button:focus {
     overflow-x: auto;
   }
 
+  header nav #mobile-menu,
   .card .mobile,
   .left_block .mobile,
   .left_block .left_block_title .mobile {
@@ -539,7 +593,7 @@ button:focus {
   }
 
   .left_block > p {
-    font-style: 16px;
+    font-size: 16px;
   }
 
   header {
@@ -575,6 +629,11 @@ button:focus {
     transition: all 0.1s ease-in 0.1s;
   }
 
+  header nav ul li a.active {
+    color: #6070ff;
+    font-weight: bolder;
+  }
+
   header nav ul li a:hover {
     font-weight: 700;
     font-size: 1rem;
@@ -591,9 +650,7 @@ button:focus {
     font-size: 48px;
     line-height: 60px;
     color: #091e42;
-    animation: slidein;
-    animation-duration: 1s;
-    animation-iteration-count: 1;
+    animation: slidein 1s 1;
   }
 
   @keyframes slidein {
