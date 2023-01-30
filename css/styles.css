@@ -629,6 +629,11 @@ button:focus {
     transition: all 0.1s ease-in 0.1s;
   }
 
+  header nav ul li a.active {
+    color: #6070ff;
+    font-weight: bolder;
+  }
+
   header nav ul li a:hover {
     font-weight: 700;
     font-size: 1rem;
