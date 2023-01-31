@@ -25,4 +25,5 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
+  // add the projects to the works section dynamically.
 }, false);
