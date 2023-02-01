@@ -160,14 +160,14 @@ function showModal() {
   modal.style.display = 'block';
 }
 
-// function updateModalContent(projectId) {
-//   modal.innerHTML = `
-//   <div class='modal-header'>
-//     <h2>${projects[projectId].name[0]}</h2>
-//     <a class='close-modal'>&times; </a>
-//   </div>
-//   `;
-// }
+function updateModalContent(projectId) {
+  modal.innerHTML = `
+  <div class='modal-header'>
+    <h2>${projects[projectId].name[0]}</h2>
+    <a class='close-modal'>&times; </a>
+  </div>
+  `;
+}
 
 // add the modal to the DOM
 body.appendChild(modal);
