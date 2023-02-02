@@ -206,15 +206,21 @@ header a img {
   height: auto;
 }
 
+.modal .desktop,
 .card .desktop,
 .left_block .desktop,
+.modal .frame .desktop,
+.modal .description_wrapper .description.desktop,
 .left_block .left_block_title .desktop,
-.left_block .tags .desktop {
+.left_block .tags .desktop,
+.description_wrapper .tags-button_wrapper .tags .desktop {
   display: none;
 }
 
+.modal .mobile,
 .card .mobile,
 .left_block .mobile,
+.modal .frame .mobile,
 .left_block .left_block_title .mobile {
   display: initial;
 }
@@ -362,11 +368,12 @@ button.action {
   line-height: 24px;
 }
 
-.skill_list ul li .frame {
+.skill_list ul li .list {
   display: flex;
   justify-content: space-between;
 }
 
+.modal .frame,
 .left_block .left_block_title .frame {
   display: flex;
   gap: 12px;
@@ -569,16 +576,22 @@ button:focus {
   }
 
   header nav #mobile-menu,
+  .modal .mobile,
   .card .mobile,
   .left_block .mobile,
+  .modal .frame .mobile,
   .left_block .left_block_title .mobile {
     display: none;
   }
 
+  .modal .desktop,
   .card .desktop,
   .left_block .desktop,
+  .modal .frame .desktop,
   .left_block .left_block_title .desktop,
-  .left_block .tags .desktop {
+  .left_block .tags .desktop,
+  .modal .description_wrapper .description.desktop,
+  .description_wrapper .tags-button_wrapper .tags .desktop {
     display: initial;
   }
 
