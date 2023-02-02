@@ -1,3 +1,4 @@
+![](https://img.shields.io/badge/Microverse-blueviolet)
 <a name="readme-top"></a>
 
 <!--
@@ -27,8 +28,8 @@ After you're finished please remove all the comments and instructions!
 
 <div align="center">
   <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
-  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
-  <br/>
+  <!-- <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
+  <br/> -->
 
   <!-- <h3><b>Microverse README Template</b></h3> -->
 
@@ -69,7 +70,7 @@ Have a look at [this presentation](https://www.loom.com/share/cb3e7a960be04030a8
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> This is a simple project built with HTML and CSS
+<!-- > This portfolio website is creatd using HTML, CSS, and JavaScript. -->
 
 <details>
   <summary>Client</summary>
@@ -82,14 +83,14 @@ Have a look at [this presentation](https://www.loom.com/share/cb3e7a960be04030a8
 <details>
   <summary>Server</summary>
   <ul>
-    <li>No server</li>
+    <li>N/A</li>
   </ul>
 </details>
 
 <details>
 <summary>Database</summary>
   <ul>
-    <li>No Database</li>
+    <li>N/A</li>
   </ul>
 </details>
 
@@ -97,7 +98,7 @@ Have a look at [this presentation](https://www.loom.com/share/cb3e7a960be04030a8
 
 ### Key Features <a name="key-features"></a>
 
-> The following are the key features of the application.
+<!-- > The following are the key features of the application. -->
 
 - **Displays <em> headline section, works, about, and contact sections </em> in mobile first design approach.**
 
@@ -107,7 +108,7 @@ Have a look at [this presentation](https://www.loom.com/share/cb3e7a960be04030a8
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Click the live demo to access the application.
+<!-- > Click the live demo to access the application. -->
 
 - [Live Demo Link](https://zewdiemc.github.io/Portfolio/)
 
@@ -123,6 +124,8 @@ To get a local copy up and running, follow these steps.
 ### Prerequisites
 
 In order to run this project you need:
+- stylelint installed and running
+- eslint installed and running
 
 <!--
 Example command:
@@ -135,9 +138,6 @@ Example command:
 ### Setup
 
 Clone this repository to your desired folder:
-
-
-
 
 ```
   git clone git@github.com:ZewdieMc/Portfolio.git
@@ -155,14 +155,11 @@ Install this project with:
 
 To run the project, execute the following command:
 
-<!--
-Example command:
-
 ```sh
-  rails server
+  cd /Portfolio
+  code .
 ```
---->
-
+Then install live server and open the `html.index` with the live server.
 ### Run tests
 
 To run tests, run the following command:
@@ -175,17 +172,19 @@ Example command:
 ```
 --->
 
-### Deployment
+```sh
+ npx stylelint "**/*.{css,scss}"
+ npx hint .
+ npx eslint .
+```
+
+ ### Deployment
 
 You can deploy this project using:
 
-<!--
-Example:
-
 ```sh
-
+ N/A
 ```
- -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -193,14 +192,19 @@ Example:
 
 ## 👥 Authors <a name="authors"></a>
 
-> This project is authored by
+<!-- > This project is authored by -->
 
-👤 **Author1**
+👤 **Zewdie Habtie**
 
 - GitHub: [@githubhandle](https://github.com/ZewdieMc)
 - Twitter: [@twitterhandle](https://twitter.com/HabtieZewdie)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/zewdie-habtie-sisay-947153172)
 
+👤 **Amaneul Belete**
+
+- GitHub: [@githubhandle](https://github.com/amanuelbelete95)
+- Twitter: [@twitterhandle](https://twitter.com/AmaneulBe)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/ameneul-b-5545)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -208,11 +212,11 @@ Example:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
+<!-- > Describe 1 - 3 features you will add to the project. -->
 
-- [ ] **Use css flexbox**
-- [ ] **Use css grid system**
-- [ ] **Add media queries**
+- **Rebuilt the interfafce using react components**
+- **Test the application using Jest**
+- **Add Backend endpoint using NodeJs**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -230,7 +234,7 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
+<!-- > Write a message to encourage readers to support your project -->
 
 If you like this project give it a start on GitHub
 
@@ -238,16 +242,16 @@ If you like this project give it a start on GitHub
 
 <!-- ACKNOWLEDGEMENTS -->
 
-## 🙏 Acknowledgments <a name="acknowledgements"></a>
+<!-- ## 🙏 Acknowledgments <a name="acknowledgements"></a> -->
 
-I would like to thank Microverse!
+<!-- I would like to thank Microverse! -->
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<!-- <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
 <!-- FAQ (optional) -->
 
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<!-- <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
 <!-- LICENSE -->
 
