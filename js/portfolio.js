@@ -142,10 +142,6 @@ const showModal = () => {
 };
 
 function updateModalContent(id) {
-  const description = `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea`;
-  const descriptionmob = `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-   only five centuries, but also the leap into electronic typesetting, remaining essent`;
   modal.innerHTML = `
   <div class='modal-header'>
     <h2 class='mobile'>${projects[id].name[0]}</h2>
@@ -163,11 +159,11 @@ function updateModalContent(id) {
     <div class="year mobile">${projects[id].roles[3][0]}</div>
     <div class="year desktop">${projects[id].roles[3][1]}</div>
 </div>
-<img class='snapshoot mobile'src="${projects[id].images[0]}" alt="project feature image">
-<img class='snapshoot desktop'src="${projects[id].images[1]}" alt="project feature image">
+<div class='project-image-container mbl' style='background-image: url("${projects[id].images[0]}');'></div>
+<div class='project-image-container dsktp' style='background-image: url("${projects[id].images[1]}");'></div>
 <div class='description_wrapper'>
-  <p class="description desktop">${description}</p>
-  <p class="description mobile">${descriptionmob}</p>
+  <p class="description desktop">${projects[id].description[1]}</p>
+  <p class="description mobile">${projects[id].description[0]}</p>
   <div class='tags-button_wrapper'>
       <ul class="tags">
        <li>HTML</li>
