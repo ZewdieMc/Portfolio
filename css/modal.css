@@ -2,18 +2,22 @@
 .modal {
   display: flex;
   flex-direction: column;
-  gap: 0.4rem;
+  gap: 0.2rem;
   width: 90%;
-  height: calc(100vh - 10%);
+  height: auto;
   position: fixed;
   top: 0;
-  left: 5%;
-  bottom: 0;
-  margin: 10% auto 10%;
+  left: 0;
+  margin-top: 4%;
+  transform: translate(calc(50vw - 50%));
   background-color: #fff;
   border-radius: 16px;
   padding: 16px;
-  z-index: 2;
+  z-index: 20;
+}
+
+.modal-content {
+  overflow-y: auto;
 }
 
 .overlay {
@@ -23,14 +27,14 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.4);
-  z-index: 1;
+  z-index: 10;
   backdrop-filter: blur(15px);
 }
 
 .modal .description_wrapper {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 6px;
   margin-top: 30px;
 }
 
@@ -62,7 +66,7 @@
 .description_wrapper .tags-button_wrapper {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 11px;
   padding-bottom: 1rem;
 }
 
@@ -140,14 +144,18 @@
   .modal {
     width: 80%;
     height: calc(100vh - 40px);
-    left: 10%;
-    padding: 1rem 1em 4em 1rem;
+    padding: 1rem;
     margin: 2% auto 0;
+  }
+
+  .modal-content {
+    overflow-y: hidden;
   }
 
   .project-image-container {
     width: 100%;
     height: 300px;
+    background-size: cover;
   }
 
   .dsktp {

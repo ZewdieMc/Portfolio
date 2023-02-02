@@ -31,8 +31,8 @@ const projects = [
     name: ['Tonic', 'Tonic'],
     images: ['./images/Snapshootmbl1.png', './images/Snapshootdsktp1.png'],
     description: [
-      'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
-      'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
+      'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s.',
+      'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s.',
     ],
     technologies: ['html', 'css', 'JavaScript'],
     roles: [['CANOPY', 'CANOPY'], './images/Counter.png', ['Back End Dev', 'Back End Dev'], ['2015', '2015']],
@@ -43,7 +43,7 @@ const projects = [
     name: ['Multi-Post Stories', 'Multi-Post Stories'],
     images: ['./images/Snapshootmbl2.png', './images/Snapshootdsktp2.png'],
     description: [
-      'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
+      'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s.',
       'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
     ],
     technologies: ['html', 'Ruby on rails', 'css', 'JavaScript',
@@ -56,7 +56,7 @@ const projects = [
     name: ['Tonic', 'Facebook 360'],
     images: ['./images/Snapshootmbl3.png', './images/Snapshootdsktp3.png'],
     description: [
-      'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
+      'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s.',
       'Exploring the future of media in Facebook\'s first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.',
     ],
     technologies: ['html', 'Ruby on rails', 'css', 'JavaScript',
@@ -69,7 +69,7 @@ const projects = [
     name: ['Multi-Post Stories', 'Uber Navigation'],
     images: ['./images/Snapshootmbl4.png', './images/Snapshootdsktp4.png'],
     description: [
-      'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
+      'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s.',
       'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
     ],
     technologies: ['html', 'Ruby on rails', 'css', 'JavaScript',
