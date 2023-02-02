@@ -9,12 +9,25 @@
     <title>Zewdie's Portfolio</title>
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/modal.css">
     <link rel="icon" href="./images/cropped-ZD-icon.png">
 </head>
 
 <body>
+    <!-- overlay -->
+    <div class="overlay hide">
+
+    </div>
+
+    <!-- modal -->
+    <div class="modal hide">
+        <div class="modal-header">
+            <a class='close-modal'>&times; </a>
+        </div>
+    </div>
+    <!-- mobile menu -->
     <div class="menu hidden">
-        <a id='close-menu'href="javascript:void(0)">
+        <a id='close-menu' href="javascript:void(0)">
             &times;
         </a>
         <div class="menu-content">
@@ -37,7 +50,7 @@
         </nav>
     </header>
     <!-- headeline -->
-    <section id="headline_section"class="headline">
+    <section id="headline_section" class="headline">
         <div class="main_content">
             <h1 class="username">I’m Zewdie <br>Glad to see you!</h1>
             <p class="introduction">I’m a software developer! I can help you build a product ,
@@ -81,13 +94,13 @@
     <!-- end of headline -->
 
     <!-- works -->
-    <section id="portfolio_section"class="works">
- 
+    <section id="portfolio_section" class="works">
+
     </section>
     <!-- end of works section -->
 
     <!-- about myself -->
-    <section id="about_section"class="about_myself">
+    <section id="about_section" class="about_myself">
         <div class="top">
             <h2>About<br> Myself</h2>
             <p>Hello I’m a software developer! I can help you build a product , feature or website Look through some of
@@ -96,7 +109,7 @@
             <h2 id="lets_connect">LET'S CONNECT</h2>
             <ul class="links">
                 <li>
-                    <a href="#"aria-label="Go to my twitter account">
+                    <a href="#" aria-label="Go to my twitter account">
                         <img src="./images/twitter.png" alt="twitter icon">
                     </a>
                 </li>
@@ -129,7 +142,7 @@
         <div class="skill_list">
             <ul>
                 <li>
-                    <div class="frame">
+                    <div class="list">
                         <h3>Languages</h3> <img class="arrow" src="./images/Disabled.png" alt="">
                     </div>
                     <ul class="language_wrapper">
@@ -138,15 +151,19 @@
                         <li class="language"><img src="./images/Ellipse_css.png" alt="CSS icon">CSS</li>
                     </ul>
                 </li>
-                <li><hr/></li>
                 <li>
-                    <div class="frame">
+                    <hr />
+                </li>
+                <li>
+                    <div class="list">
                         <h3>Frameworks</h3> <img class="arrow" src="./images/right.png" alt="rigt pointing arrow">
                     </div>
                 </li>
-                <li><hr/></li>
                 <li>
-                    <div class="frame">
+                    <hr />
+                </li>
+                <li>
+                    <div class="list">
                         <h3>Skills</h3><img class="arrow" src="./images/right.png" alt="right pointing arrow">
                     </div>
                 </li>
@@ -156,7 +173,7 @@
     <!-- end of about section -->
 
     <!-- contact form -->
-    <section id="contact_section"class="contact_form">
+    <section id="contact_section" class="contact_form">
         <div class="contact_wrapper">
             <div class="form_wrapper">
                 <h2>Contact me</h2>
@@ -167,9 +184,9 @@
                 </p>
                 <form action="https://formspree.io/f/xbjeloeq" method="post">
                     <label for="username"></label>
-                    <input id="username"name="username" type="text" placeholder="Your name" maxlength="30" required>
+                    <input id="username" name="username" type="text" placeholder="Your name" maxlength="30" required>
                     <label for="email"></label>
-                    <input id="email"name="email" type="email" placeholder="youremail@example.com" required>
+                    <input id="email" name="email" type="email" placeholder="youremail@example.com" required>
                     <label for="message"></label>
                     <textarea name="message" id="message" placeholder="Write your message here" maxlength="500"
                         required></textarea>
@@ -179,7 +196,7 @@
         </div>
     </section>
     <!-- end of contact form -->
-    <script type="module"src="./js/portfolio.js"></script>
+    <script type="module" src="./js/portfolio.js"></script>
 </body>
 
 </html>
