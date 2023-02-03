@@ -13,7 +13,7 @@ form.addEventListener('submit', (event) => {
   if (email.value !== email.value.toLowerCase()) {
     emailErrorContainer.textContent = 'You are required to use only lowercase letters in your email.';
     emailErrorContainer.classList.add('active');
-    setTimeout( ()=> emailErrorContainer.classList.remove('active'), 5000);
+    setTimeout(() => emailErrorContainer.classList.remove('active'), 5000);
   } else {
     form.submit();
   }
