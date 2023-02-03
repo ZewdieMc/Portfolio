@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/modal.css">
+    <link rel="stylesheet" href="./css/validate.css">
     <link rel="icon" href="./images/cropped-ZD-icon.png">
 </head>
 
@@ -191,11 +192,13 @@
                     <textarea name="message" id="message" placeholder="Write your message here" maxlength="500"
                         required></textarea>
                     <input type="submit" value="Get It Touch">
+                    <span class="error" aria-live="polite"></span>
                 </form>
             </div>
         </div>
     </section>
     <!-- end of contact form -->
+    <script src="./js/validate.js"></script>
     <script type="module" src="./js/portfolio.js"></script>
 </body>
 
