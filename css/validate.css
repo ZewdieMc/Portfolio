@@ -1,0 +1,12 @@
+span.error {
+  display: none;
+}
+
+span.error.active {
+  display: inline-block;
+  color: rgb(255, 0, 0);
+  font-weight: 600;
+  padding: 1rem;
+  border-radius: 4px;
+  background-color: rgb(200, 162, 162);
+}
