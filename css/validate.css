@@ -4,9 +4,28 @@ span.error {
 
 span.error.active {
   display: inline-block;
-  color: rgb(255, 0, 0);
+  color: rgb(170, 19, 19);
   font-weight: 600;
   padding: 1rem;
   border-radius: 4px;
-  background-color: rgb(200, 162, 162);
+  background-color: rgba(200, 162, 162, 0.6);
+  animation: 3s fedout 0s 1;
+}
+
+@keyframes fedout {
+  0% {
+    opacity: 0.25;
+  }
+
+  25% {
+    opacity: 0.75;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }

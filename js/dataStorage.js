@@ -1,6 +1,6 @@
-const username = document.getElementById('username');
-const email = document.getElementById('email');
-const message = document.getElementById('message');
+export const username = document.getElementById('username');
+export const email = document.getElementById('email');
+export const message = document.getElementById('message');
 
 const populateForm = () => {
   const userData = JSON.parse(localStorage.getItem('userData'));

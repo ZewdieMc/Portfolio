@@ -1,5 +1,6 @@
+import { email } from './dataStorage.js';
+
 const form = document.querySelector('form');
-const email = document.getElementById('email');
 const emailErrorContainer = document.querySelector('span.error');
 
 email.addEventListener('input', () => {
