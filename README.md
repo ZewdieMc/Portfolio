@@ -196,9 +196,9 @@ You can deploy this project using:
 
 👤 **Zewdie Habtie**
 
-- GitHub: [@githubhandle](https://github.com/ZewdieMc)
-- Twitter: [@twitterhandle](https://twitter.com/HabtieZewdie)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/zewdie-habtie-sisay-947153172)
+- GitHub: [Zewdie Habtie](https://github.com/ZewdieMc)
+- Twitter: [Zewdie Habtie](https://twitter.com/HabtieZewdie)
+- LinkedIn: [Zewdie Habtie](https://linkedin.com/in/zewdie-habtie-sisay-947153172)
 
 👤 **Amaneul Belete**
 
