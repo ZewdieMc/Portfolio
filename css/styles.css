@@ -4,7 +4,15 @@
   padding: 0;
   outline: none;
 }
-
+::-webkit-scrollbar-thumb {
+  background:
+    linear-gradient(
+      0deg,
+      rgba(34, 193, 195, 1) 0%,
+      rgba(253, 187, 45, 1) 100%
+    );
+  border-radius: 20px;
+}
 body {
   display: flex;
   flex-direction: column;
